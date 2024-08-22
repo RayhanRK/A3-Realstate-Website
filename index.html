@@ -1,11 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Realstate Website</title>
+    <title>Rinterio Website</title>
+
+     <!-- Google font CDN -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+     <!-- Font Awesome CDN -->
+     <script src="https://kit.fontawesome.com/d327c21141.js" crossorigin="anonymous"></script>
+
+    <!-- DaisyUI & Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .font-Manrope{
+            font-family: "Manrope", sans-serif;
+        }
+    </style>  
+    
+    <!-- Tailwind css configuration -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'act': 'rgb(73, 73, 73)',
+                'btn-primary': '#ABEF5F',
+                'primary-bg':'#F4F4F4',
+                'secondary-bg':'rgb(30, 30, 30)',
+                'hero-bg':'linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%)',
+              },
+            //   backgroundImage: { },
+            },
+          },
+        }
+      </script>
+
 </head>
-<body>
+
+<body class="font-Manrope">
+
+      <!-- header section starts-->
+    <header class="bg-gray-100">
+        <nav class="w-11/12 mx-auto">
+            <div class="navbar bg-gray-100">
+                <div class="navbar-start">
+                  
+                   <div class="flex items-center space-x-3">
+
+                    <div class="text-lg bg-btn-primary w-7 h-7 rounded-full"><i class="fa-solid fa-arrow-up fa-rotate-by fa-md" style="color:black; --fa-rotate-angle: 45deg ;padding:5px;""></i></div>
+
+                    <a class=" font-bold text-3xl">Rinterio</a>
+                   </div>
+                
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 ">
+
+                    <li><a class="font-extrabold" style="color: #494949;">Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfoilo</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end space-x-4">
+
+                   <div class=" hidden md:flex space-x-3">
+
+                    <div>
+                        <h4 class="text-lg bg-white w-9 h-9 rounded-full"><i class="fa-solid fa-magnifying-glass" style="color: #737373; padding:9px;""></i></h4>
+                    </div>
+                    <div>
+                        <h4 class="text-lg bg-white w-9 h-9 rounded-full"><i class="fa-solid fa-cart-shopping" style="color: #737373; padding:7px;""></i></h4>
+                    </div>
+
+                   </div>
+
+                    
+                  <!-- <a class="btn bg-btn-primary text-black font-bold">Book Consult</a> -->
+                   
+                  <button class="btn flex items-center bg-btn-primary text-black text-lg font-semibold rounded-3xl hidden md:flex">
+                   
+                    <span>Book Consult</span>
+                    <div class="text-lg bg-black w-7 h-7 rounded-full"><i class="fa-solid fa-arrow-up fa-rotate-by fa-sm" style="color: #ffffff; --fa-rotate-angle: 45deg ;""></i></div>
+                
+                  </button>
+
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <i class="fa-solid fa-bars fa-xl"></i>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-40 p-2 shadow right-0">
+                      <li><a>Home</a></li>
+                      <li>
+                        <a>Services</a>
+                      </li>
+                      <li><a>Portfoilo</a></li>
+                      <li><a>Blogs</a></li>
+                      <li><a>Contact Us</a></li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+        
+    </main>
+
+    <footer></footer>
     
 </body>
 </html>
