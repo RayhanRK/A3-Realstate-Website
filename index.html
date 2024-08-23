@@ -30,13 +30,16 @@
           theme: {
             extend: {
               colors: {
-                'act': 'rgb(73, 73, 73)',
+
                 'btn-primary': '#ABEF5F',
-                'primary-bg':'#F4F4F4',
+                'btn-secondary': 'rgba(171, 239, 95, 0.4)',
+                'primary-bg':'#F2F2F2',
                 'secondary-bg':'rgb(30, 30, 30)',
-                'hero-bg':'linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%)',
+                'txt21':'#212121',
+                'txt49':'#494949',
+                'txt73':'#737373',
+                
               },
-            //   backgroundImage: { },
             },
           },
         }
@@ -46,10 +49,12 @@
 
 <body class="font-Manrope">
 
-      <!-- header section starts-->
-    <header class="bg-gray-100">
+    <!-- <header class="bg-gray-100"> -->
+
+  <header  class="bg-gradient-to-b from-gray-100 to-gray-50">
+       <!-- navbar starts -->
         <nav class="w-11/12 mx-auto">
-            <div class="navbar bg-gray-100">
+            <div class="navbar py-6">
                 <div class="navbar-start">
                   
                    <div class="flex items-center space-x-3">
@@ -115,10 +120,146 @@
 
         </nav>
 
+    <!-- Banner section starts -->
+    <section class="w-full">
+
+        <div class="w-11/12 mx-auto pt-4">
+            <div class="lg:w-1/3 mx-auto">
+                <img src="./assets/banner.png" alt="">
+            </div>
+            <div>
+                <h1 class="text-2xl lg:text-5xl text-txt21 font-bold w-2/3 mx-auto text-center my-5">Our unique designs represents an aesthetic appearance</h1>
+                <p class="text-xl w-2/3 mx-auto text-center my-5">We blend aesthetic charming houses with modern sophisticated art, crafting harmonious mix of weathered wood, sleek metal accents, and ample natural light.
+                </p>
+               
+                <div class="flex justify-center">
+                     <button class="btn flex items-center bg-[#acef5f80] text-black text-lg font-semibold rounded-3xl w-full sm:w-auto">
+                
+                        <span>View Details</span>
+                        <div class="text-lg bg-[#ABEF5F] w-7 h-7 rounded-full"><i class="fa-solid fa-arrow-up fa-rotate-by fa-sm" style="color:black; --fa-rotate-angle: 45deg ;""></i></div>
+                    
+                      </button>
+                 </div>         
+              </div>
+          </div>
+        
+    </section>
+
     </header>
 
     <main>
-        
+          <!-- Design Thoughtfull section starts -->
+
+          <section class="bg-primary-bg mt-12 p-8">
+            <img src="./assets/Vector.png" alt="" class="ml-2 hidden lg:block">
+
+                      <!-- ..container div.. -->
+            <div class="lg:w-11/12 mx-auto lg:flex gap-16"> 
+
+              <div class="space-y-3 lg:w-2/4 mt-2 h-full">
+
+                   <!-- white About us button -->
+              <div class="text-center lg:text-left">
+                <button class="bg-white px-4 py-2 rounded-full inline-flex items-center justify-center my-2">
+                  <i class="fa-solid fa-arrow-right-long mr-1"></i>
+                  About Us</button>
+              </div>
+
+                  <!-- text contents -->
+                   <h1 class="text-txt21 text-2xl lg:text-4xl font-extrabold text-center lg:text-left">We design thoughtful,<br> liveable spaces</h1>
+
+                   <p class="text-txt49 text-center lg:text-left">
+                    We design spaces that blend functionality with aesthetics, creating environments that are both practical.Our focus is on making each space uniquely liveable.</p>
+
+                     <!-- 1st card -->
+                     <div class="flex items-center space-x-7 p-4 bg-white rounded-lg">
+
+                      <img src="./assets/commercial.png" alt="">
+                      <div class="space-y-1">
+                          <h1 class="font-bold">Commercial</h1>
+                          <p class="text-txt73">We design commercial spaces that combine functionality with modern aesthetics.</p>
+                      </div>
+                     </div>
+                     
+                     <!-- 2nd card -->
+                     <div class="flex items-center space-x-7 p-4 bg-white rounded-lg">
+
+                      <img src="./assets/residential.png" alt="">
+                      <div class="space-y-1">
+                          <h1 class="font-bold">Residential</h1>
+                          <p class="text-txt73">We create residential houses that combine functionality with comfort, style and beauty.</p>
+                      </div>
+                    </div>
+              </div>               
+
+                  <!-- image content -->
+                <div class="lg:w-4/8 mt-5 lg:mt-0">
+                  <img src="./assets/Rectangle.png" alt="" class="w-full h-full">
+                </div>
+            </div>
+
+          <!-- Our Works Process section starts -->
+           <!-- text contents -->
+           <div class="flex flex-col justify-center items-center space-y-2 mt-8 lg:mt-24">
+              <button class="bg-white px-3 py-2 rounded-full inline-flex items-center justify-center "><i class="fa-solid fa-arrow-right-long mr-1"></i>
+                How we works</button>
+
+              <h1 class="text-txt21 text-2xl lg:text-4xl font-bold">Our Works Process</h1>
+
+              <p class="text-txt49 lg:w-2/4 mx-auto text-center">Our Concept development, designing, supervision, and budget planning process ensures a seamless project from start to finish.</p>
+
+            </div>
+
+            <!-- Our Works Process 4 Cards -->
+            <div class="lg:w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+
+            <div class="bg-[#E7C1D3] space-y-2 rounded-lg p-6">
+              <img src="./assets/concept.png" alt="">
+              <h2 class="font-bold">Concept</h2>
+              <p class="text-txt49">We build concepts that align with your vision and project goals.</p>
+            </div>
+
+            <div class="bg-[#EFDA6E] space-y-2 rounded-lg p-6">
+              <img src="./assets/flow-chart.png" alt="">
+              <h2 class="font-bold">Design Process</h2>
+              <p class="text-txt49">Our detailed designs ensures your structure with aesthetic appeal.</p>
+            </div>
+
+            <div class="bg-[#A4DAC3] space-y-2 rounded-lg p-6">
+              <img src="./assets/vision.png" alt="">
+              <h2 class="font-bold">Supervision</h2>
+              <p class="text-txt49">We ensure quality and timely completion through finest supervision.</p>
+            </div>
+
+            <div class="bg-[#77AAEA] space-y-2 rounded-lg p-6">
+              <img src="./assets/budget-planning.png" alt="">
+              <h2 class="font-bold">Budget Planning</h2>
+              <p class="text-txt49">We manage budget planning to keep your project on track within cost.</p>
+            </div>
+         </div>
+
+         </section>
+
+<!-- our latest portfolio section starts -->
+  <section class="p-7 bg-[#F4F4F4] lg:bg-white">
+
+        <div class="lg:w-4/5 mx-auto">
+
+          <div class="flex flex-col justify-center items-center mt-2 lg:mt-14 space-y-3">
+
+          <button class="bg-btn-secondary px-3 py-2 rounded-full inline-flex items-center justify-center"><i class="fa-solid fa-arrow-right-long mr-1"></i>Explore our Latest works</button>
+       
+          <h1 class="text-txt21 text-2xl lg:text-4xl font-bold text-center">Our Latest Portfolio</h1>
+          <p class="text-txt49 lg:w-2/4 mx-auto text-center">Explore our latest portfolio to see how we blend design and functionality , showcasing a range of projects tailored to your needs.</p>
+
+        </div>
+
+  </section>      
+
+
+
+
+
     </main>
 
     <footer></footer>
